@@ -1,4 +1,6 @@
 
+__version__ = '0.1.0'
+
 try:
     import PySide2
     pyside2_available = True
