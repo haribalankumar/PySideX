@@ -1,5 +1,6 @@
 import os
 import re
+import codecs
 from setuptools import setup
 
 
@@ -22,8 +23,9 @@ def find_version(*file_paths):
 
 setup(
     name='PySideX',
-    version=find_version("src", "__init__.py"),
-    packages=['src.PySideX'],
+    version=find_version("src", "PySideX", "__init__.py"),
+    packages=['PySideX'],
+    package_dir = {'': 'src'},
     url='',
     license='Apache Software License',
     author='Hugh Sorby',
