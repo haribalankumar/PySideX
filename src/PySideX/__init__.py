@@ -1,5 +1,5 @@
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 try:
     import PySide2
@@ -16,6 +16,8 @@ except ImportError:
 if pyside2_available:
     from PySide2 import QtCore
     from PySide2 import QtWidgets
+    from PySide2 import QtOpenGL
 else:
     from PySide import QtCore
     from PySide import QtGui as QtWidgets
+    from PySide import QtOpenGL
